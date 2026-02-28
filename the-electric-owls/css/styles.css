@@ -183,6 +183,25 @@ footer {
         width: 10.8125rem;
     }
 }
-/* ***************** footer ***************** */
+
+/* ***************** Add media query for the 960px screen ***************** */
+
+@media screen and (min-width:960px) {
+    .flex-container {
+        display: flex;
+    }
+
+    section {
+        width: calc((100% / 2) - (2rem / 2));
+    }
+
+    .btn-center {
+        justify-content: unset;
+    }
+
+    footer p {
+        max-width: 60ch;
+    }
+}
 
 /* ***************** footer ***************** */
