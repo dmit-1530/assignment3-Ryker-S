@@ -76,6 +76,7 @@ ol li {
     display: inline-block;
     padding: 0.625rem 1.25rem;
     background-color: #A4DD00;
+    color: #000;
     border-radius: 0.25rem;
     text-decoration: none;
 }
@@ -138,7 +139,7 @@ form input[id="email"] {
 
 form .btn {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #E7E5E4;
     width: 100%;
     border: 1px solid #57534E;
 }
@@ -176,7 +177,7 @@ footer {
 
     form input[id="email"] {
         margin-bottom: unset;
-        width: 23.9375rem;
+        max-width: 23.9375rem;
     }
 
     form .btn {
@@ -187,8 +188,9 @@ footer {
 /* ***************** Add media query for the 960px screen ***************** */
 
 @media screen and (min-width:960px) {
-    .flex-container {
+    main .flex-container {
         display: flex;
+        gap: 2rem;
     }
 
     section {
@@ -204,4 +206,33 @@ footer {
     }
 }
 
-/* ***************** footer ***************** */
+/* ***************** Add media query for the 1920px screen ***************** */
+
+@media screen and (min-width:1920px) {
+    .container,
+    main {
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        gap: 2rem;
+    }
+
+    section,
+    aside {
+        max-width: 34.5rem;
+        max-height: fit-content;
+    }
+
+    aside {
+        padding: 2.75rem 1rem 4.125rem 1rem;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+    }
+}
